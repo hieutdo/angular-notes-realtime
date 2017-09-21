@@ -26,6 +26,6 @@ export class AppComponent implements OnInit {
 
     this.socket.connected$
       .map(connected => new uiActions.SetSocketConnected(connected))
-      .subscribe();
+      .subscribe(this.store);
   }
 }

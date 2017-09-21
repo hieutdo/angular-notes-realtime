@@ -8,12 +8,15 @@ export const INIT_STATE: State = {
   socketConnected: false,
 };
 
-export function reducer(state = INIT_STATE, { type, payload }: uiActions.All) {
+export function reducer(
+  state = INIT_STATE,
+  { type, payload }: uiActions.All
+): State {
   switch (type) {
     case uiActions.SET_SOCKET_CONNECTED:
       return {
         ...state,
-        socketConnect: payload,
+        socketConnected: payload,
       };
     default:
       return state;
