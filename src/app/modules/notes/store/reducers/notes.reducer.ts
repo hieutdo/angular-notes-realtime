@@ -28,3 +28,5 @@ export function reducer(state = INIT_STATE, action: notesActions.All): State {
 
 export const getIds = (state: State) => state.ids;
 export const getEntities = (state: State) => state.entities;
+export const getEntitiesArray = (state: State) =>
+  state.ids.map(id => state.entities[id]);

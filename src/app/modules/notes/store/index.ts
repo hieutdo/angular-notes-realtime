@@ -25,3 +25,7 @@ export const selectEntities = createSelector(
   selectNotesState,
   fromNotes.getEntities
 );
+export const selectEntitiesArray = createSelector(
+  selectNotesState,
+  fromNotes.getEntitiesArray
+);

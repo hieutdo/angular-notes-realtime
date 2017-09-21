@@ -1,3 +1,5 @@
-<p>
-  note-list works!
-</p>
+<ul>
+  <li *ngFor="let note of notes$ | async">
+    {{note.body}}
+  </li>
+</ul>
