@@ -9,9 +9,10 @@ import { NotesRoutes } from './notes.routes';
 import { NotesService } from './services/notes.service';
 import * as fromNotesStore from './store';
 import { NotesEffects } from './store/effects/notes.effects';
+import { NoteItemComponent } from './note-item/note-item.component';
 
 @NgModule({
-  declarations: [NoteListComponent],
+  declarations: [NoteListComponent, NoteItemComponent],
   imports: [
     CommonModule,
     NotesRoutes,
